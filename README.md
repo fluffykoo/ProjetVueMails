@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ProjetVueMails
 =======
 # vue-oauth-microsoft-graph
