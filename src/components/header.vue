@@ -1,13 +1,18 @@
 
 <template>
   <header class="app-header">
-    <div class="header">VUE</div>
+    <div class="header">
+      <img src="@/assets/email-icon.jpeg" alt="Logo" class="logo" />
+    </div>
     <div class="user-greeting" v-if="isLoggedIn">Bonjour {{ userName }} !</div>
     <nav class="nav-buttons">
       <router-link class="nav-button" to="/">Accueil</router-link>
       <signinButton v-if="!isLoggedIn" />
       <router-link v-if="isLoggedIn" class="nav-button" to="/conversations"
-        >Conversations</router-link
+        >Boîte de réception</router-link
+      >
+       <router-link v-if="isLoggedIn" class="nav-button" to="/sent"
+        >Emails envoyés</router-link
       >
     </nav>
   </header>
@@ -35,7 +40,7 @@ export default {
 
 <style scoped>
 .app-header {
-  background-color: #4caf50;
+  background-color: #e6466c;
   color: #ffffff;
   padding: 20px;
   text-align: center;
@@ -59,7 +64,7 @@ export default {
 
 .nav-button {
   background-color: white;
-  color: #4caf50;
+  color: #e6466c;
   border: none;
   padding: 10px 15px;
   margin: 0 5px;
@@ -69,7 +74,7 @@ export default {
 }
 
 .nav-button:hover {
-  background-color: green;
+  background-color: hsl(345, 9%, 82%);
   color: white;
 }
 </style>
