@@ -48,7 +48,7 @@ export default {
 
 .button {
   background-color: white;
-  color: #4caf50;
+  color: #e0456a;
   border: none;
   padding: 10px 15px;
   margin: 0 5px;
@@ -58,7 +58,7 @@ export default {
 }
 
 .button:hover {
-  background-color: green;
+  background-color: #d5cdcf;
   color: white;
 }
 </style>
