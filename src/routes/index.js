@@ -1,8 +1,7 @@
-// routes/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import Homepage from '@/components/homepage.vue';
-import ConversationsIndexPage from '@/components/conversationsindexpage.vue';
-
+import ConversationsIndexPage from '@/components/boitedereception.vue';
+import SentEmails from '@/components/SentEmails.vue';
 const routes = [
     {
         path: '/',
@@ -12,6 +11,11 @@ const routes = [
         path: '/conversations',
         component: ConversationsIndexPage,
     },
+    {
+        path: '/sent',
+        component: SentEmails,
+    },
+    
 ];
 
 const router = createRouter({
