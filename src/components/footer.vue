@@ -9,10 +9,11 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #e0456b;
   color: #ffffff;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
 </style>
+
 
