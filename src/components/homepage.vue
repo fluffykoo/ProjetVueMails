@@ -3,8 +3,8 @@
     <div class="homepage">
       <img src="@/assets/email-icon.jpeg" alt="Email Icon" class="email-icon" />
 
-      <h1 class="welcome-message">Bienvenue sur notre plateforme de mails ! </h1>
-      <p>Gérez vos e-mails efficacement avec notre puissante application de messagerie électronique.</p>
+      <h1 class="welcome-message white-text">Bienvenue sur notre plateforme de mails ! </h1>
+      <p class="white-text">Gérez vos e-mails efficacement avec notre puissante application de messagerie électronique.</p>
       <router-link to="/inbox">
         <BaseButton label="Go to Inbox" />
       </router-link>
@@ -50,6 +50,10 @@ export default {
   text-align: center; /* Centrer le texte */
   font-size: 3em; /* Taille du texte */
   margin-top: 20px; /* Espacement en haut */
+}
+
+.white-text {
+  color: white; /* Couleur du texte */
 }
 
 .letter {
