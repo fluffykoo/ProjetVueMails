@@ -13,14 +13,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      subject: "",
-      body: "",
-    };
-  },
+
   methods: {
     addEmail() {
       const email = {
