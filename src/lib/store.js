@@ -18,6 +18,10 @@ export default createStore({
             state.sentEmails.push(email);
             sessionStorage.setItem('sentEmails', JSON.stringify(state.sentEmails));
         },
+         deleteEmail(state, emailIndex) {
+            state.sentEmails.splice(emailIndex, 1);
+            sessionStorage.setItem('sentEmails', JSON.stringify(state.sentEmails));
+        },
     },
     actions: {
         setUser(context, userName) {
@@ -28,6 +32,9 @@ export default createStore({
         },
         sendEmail(context, email) {
             context.commit('addEmail', email);
+        },
+        deleteSentEmail(context, emailId) {
+            context.commit('deleteEmail', emailId);
         },
     },
     getters: {
