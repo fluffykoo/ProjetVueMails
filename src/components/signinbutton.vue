@@ -1,64 +1,40 @@
 <template>
-  <nav class="buttons">
-    <div>
-      <button class="button" @click="signIn" v-if="!isLoggedIn">
-        Se Connecter
-      </button>
-      {{ user.userName || "Non connecté" }}
+  <div class="container">
+    <h1>Sent Email Detail</h1>
+    <div v-if="selectedEmail">
+      <p><strong>Subject:</strong> {{ selectedEmail.subject }}</p>
+      <p><strong>Body:</strong> {{ selectedEmail.body }}</p>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>
 import { ref } from "vue";
-import { signInAndGetUser } from "@/lib/microsoftGraph.js";
-import store from "@/lib/store.js";
+import { useRouter } from "vue-router";
+import { useStore } from "vuex";
 
 export default {
-  name: "signinbutton",
   setup() {
-    const user = ref({ userName: null });
+    const router = useRouter();
+    const store = useStore();
+    const selectedEmail = ref(null);
 
-    const signIn = async () => {
-      try {
-        const authResult = await signInAndGetUser();
-        user.value.userName = authResult.account.name;
-        console.log("Utilisateur connecté:", user.value.userName);
+    // Récupérer l'ID de l'e-mail envoyé à partir des paramètres de l'URL
+    const emailId = router.currentRoute.value.params.emailId;
 
-        store.commit("setUser", user.value.userName);
-        store.commit("setAuthentication", true);
-      } catch (error) {
-        console.error("Erreur de connexion:", error);
-      }
-    };
+    // Trouver l'e-mail correspondant dans la liste des e-mails envoyés
+    const email = store.getters.getSentEmails.find(
+      (email) => email.id === emailId
+    );
+    selectedEmail.value = email;
 
     return {
-      user,
-      isLoggedIn: store.getters.isAuthenticated,
-      signIn,
+      selectedEmail,
     };
   },
 };
 </script>
 
 <style>
-.buttons {
-  display: flex;
-}
-
-.button {
-  background-color: white;
-  color: #e0456a;
-  border: none;
-  padding: 10px 15px;
-  margin: 0 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.button:hover {
-  background-color: #d5cdcf;
-  color: white;
-}
+/* Styles */
 </style>
