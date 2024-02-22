@@ -37,7 +37,6 @@ export default {
   setup() {
     const conversations = ref([]);
     const selectedConversation = ref(null);
-
     onMounted(async () => {
       try {
         conversations.value = await getConversations();
@@ -45,11 +44,9 @@ export default {
         console.error("Failed to fetch conversations:", error);
       }
     });
-
     const selectConversation = (conversation) => {
       selectedConversation.value = conversation;
     };
-
     return {
       conversations,
       selectedConversation,
@@ -68,7 +65,7 @@ export default {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f2f2f;
 }
 
 .container {
