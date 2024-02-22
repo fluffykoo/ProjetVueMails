@@ -12,8 +12,6 @@
     </form>
   </div>
 </template>
-
-
 <script>
 export default {
   data() {
@@ -38,19 +36,16 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
 }
-
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -59,13 +54,11 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #333333;
 }
-
 .input-field {
   margin-bottom: 15px;
   padding: 10px;
@@ -73,7 +66,6 @@ h1 {
   border-radius: 5px;
   width: 100%;
 }
-
 .submit-button {
   padding: 10px 15px;
   background-color: #e6466c;
@@ -84,7 +76,6 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
   width: 100%;
 }
-
 .submit-button:hover {
   background-color: #45a049;
 }
