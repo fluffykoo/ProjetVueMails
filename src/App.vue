@@ -1,7 +1,7 @@
 <script setup>
 import { createRouter, createWebHistory } from 'vue-router';
 import Homepage from "./components/homepage.vue";
-import ConversationsIndexPage from "./components/conversationsindexpage.vue";
+import ConversationsIndexPage from "./components/boitedereception.vue";
 import Baselayout from "./components/baselayout.vue";
 
 const routes = [
