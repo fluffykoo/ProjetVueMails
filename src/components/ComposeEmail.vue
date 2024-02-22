@@ -14,14 +14,22 @@
 </template>
 
 
+<script>
+export default {
+  data() {
+    return {
+      subject: "",
+      body: "",
+    };
+  },
   methods: {
     addEmail() {
       const email = {
         subject: this.subject,
         body: this.body,
       };
-      this.$store.commit("addEmail", email); // Ajoute l'e-mail dans le store Vuex
-      this.clearFields(); // Réinitialise les champs du formulaire
+      this.$store.commit("addEmail", email);
+      this.clearFields(); 
     },
     clearFields() {
       this.subject = "";
