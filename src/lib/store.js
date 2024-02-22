@@ -5,6 +5,7 @@ export default createStore({
     state: {
         user: { userName: null },
         isAuthenticated: false,
+        sentEmails: JSON.parse(sessionStorage.getItem('sentEmails')) || [],
     },
     mutations: {
         setUser(state, userName) {
@@ -12,6 +13,10 @@ export default createStore({
         },
         setAuthentication(state, isAuthenticated) {
             state.isAuthenticated = isAuthenticated;
+        },
+         addEmail(state, email) {
+            state.sentEmails.push(email);
+            sessionStorage.setItem('sentEmails', JSON.stringify(state.sentEmails));
         },
     },
     actions: {
@@ -21,10 +26,14 @@ export default createStore({
         setAuthentication(context, isAuthenticated) {
             context.commit('setAuthentication', isAuthenticated);
         },
+        sendEmail(context, email) {
+            context.commit('addEmail', email);
+        },
     },
     getters: {
         isAuthenticated: (state) => state.isAuthenticated,
         getUserName: (state) => state.user.userName,
+        getSentEmails: (state) => state.sentEmails,
     },
     modules: {},
 });
