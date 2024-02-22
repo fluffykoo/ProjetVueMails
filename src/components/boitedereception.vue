@@ -65,7 +65,7 @@ export default {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f;
+  background-color: #f2f2f2;
 }
 
 .container {
