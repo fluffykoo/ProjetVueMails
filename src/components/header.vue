@@ -3,31 +3,36 @@
     <div class="header">
       <img src="@/assets/email-icon.jpeg" alt="Logo" class="logo" />
     </div>
-    <div class="user-greeting" v-if="isLoggedIn"> Bonjour {{ userName }}  vous vous êtes connectés avec succès !</div>
+    <div class="user-greeting" v-if="isLoggedIn">
+      Bonjour {{ user?.userName || userName }} !
+    </div>
     <nav class="nav-buttons">
       <router-link class="nav-button" to="/">Accueil</router-link>
       <signinButton v-if="!isLoggedIn" />
-      <router-link v-if="isLoggedIn" class="nav-button" to="/conversations"
-        >Boîte de réception</router-link
-      >
-      <router-link v-if="isLoggedIn" class="nav-button" to="/compose"
-        >Rédiger un email</router-link
-      >
-      <router-link v-if="isLoggedIn" class="nav-button" to="/sent"
-        >Emails envoyés</router-link
-      >
+      <signingoogle v-if="!isLoggedIn" />
+      <router-link v-if="isLoggedIn" class="nav-button" to="/conversations">
+        Boîte de réception
+      </router-link>
+      <router-link v-if="isLoggedIn" class="nav-button" to="/compose">
+        Rédiger un email
+      </router-link>
+      <router-link v-if="isLoggedIn" class="nav-button" to="/sent">
+        Emails envoyés
+      </router-link>
     </nav>
   </header>
 </template>
 
 <script>
 import signinButton from "@/components/signinbutton.vue";
+import signingoogle from "@/components/signingoogle.vue";
 import store from "@/lib/store.js";
 
 export default {
-  name: "",
+  name: "Header",
   components: {
     signinButton,
+    signingoogle,
   },
   computed: {
     isLoggedIn() {
