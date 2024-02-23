@@ -1,5 +1,11 @@
 # ProjetVueMails
 ___
+# contributors 
+
+@fluffykoo -> Oumou
+@adrrien04 -> Adrrien 
+@djibril1212 -> Djibril 
+@loanectll -> Loane 
 
 # vue-oauth-microsoft-graph
 
@@ -63,5 +69,5 @@ vous accederez par les moyens de la route `/compose` à la page suivante:
 vous accederez par les moyens de la route `/Sent` à la page suivante:
 <img width="1440" alt="Capture d’écran 2024-02-23 à 17 46 05" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/06d60f40-e106-4592-9f6c-c16153803e13">
 ___
-Le bouton acceuil servant à ne pas posser de problemes lors de la déconexion.
+Le bouton acceuil servant à ne pas poser de problemes lors de la déconexion.
 
