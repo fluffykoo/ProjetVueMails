@@ -52,14 +52,16 @@ Lorsque vous etes connecté vous pourrez constater un message de conexion réuss
 Ainsi que plusieurs bouton liés aux differentes fonctionalités que nous avons développées,
 
 #### En cliquant sur **boite de réception**
-vous accederez par les moyens de la route `/conversations` à la page suivante
+vous accederez par les moyens de la route `/conversations` à la page suivante:
 <img width="1440" alt="Capture d’écran 2024-02-23 à 17 44 52" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/1a9823f1-5c9f-4402-9576-15b601f10740">
 
 #### En cliquant sur **Rédiger un email**
-vous accederez par les moyens de la route `/compose
+vous accederez par les moyens de la route `/compose` à la page suivante:
 <img width="1435" alt="Capture d’écran 2024-02-23 à 17 45 20" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/d8a984c7-9667-45ba-b3b5-966b5c0ab3e1">
 
 #### En cliquant sur **Email Envoyés**
-vous accederez par les moyens de la route `/
+vous accederez par les moyens de la route `/Sent` à la page suivante:
 <img width="1440" alt="Capture d’écran 2024-02-23 à 17 46 05" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/06d60f40-e106-4592-9f6c-c16153803e13">
+___
+Le bouton acceuil servant à ne pas posser de problemes lors de la déconexion.
 
