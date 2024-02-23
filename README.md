@@ -61,4 +61,5 @@ vous accederez par les moyens de la route `/compose
 
 #### En cliquant sur **Email Envoyés**
 vous accederez par les moyens de la route `/
+<img width="1440" alt="Capture d’écran 2024-02-23 à 17 46 05" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/06d60f40-e106-4592-9f6c-c16153803e13">
 
