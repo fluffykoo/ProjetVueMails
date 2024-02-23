@@ -39,3 +39,25 @@ npm run build
 
 # Les fonctionalités
 
+![Enregistrement de l’écran 2024-02-23 à 17 37 01](https://github.com/fluffykoo/ProjetVueMails/assets/95043878/37b0f8da-56c9-4a43-b293-24079f9b88bb)
+
+Lorsque vous cliquez sur `Se Connecter`vous accederez à la page de transition microsoft,
+
+<img width="1439" alt="Capture d’écran 2024-02-23 à 17 42 01" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/4c070298-8cd9-4d68-ac95-af1fdc50fdfc">
+
+Lorsque vous etes connecté vous pourrez constater un message de conexion réussite en haut à droite de l'écran :
+
+<img width="1434" alt="Capture d’écran 2024-02-23 à 17 43 00" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/beb46360-67cd-4f72-9276-27dc8b698966">
+
+Ainsi que plusieurs bouton liés aux differentes fonctionalités que nous avons développées,
+
+#### En cliquant sur **boite de réception**
+vous accederez par les moyens de la route `/conversations` à la page suivante
+<img width="1440" alt="Capture d’écran 2024-02-23 à 17 44 52" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/1a9823f1-5c9f-4402-9576-15b601f10740">
+
+#### En cliquant sur **Rédiger un email**
+vous accederez par les moyens de la route `/
+
+#### En cliquant sur 
+
+
