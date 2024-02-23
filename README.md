@@ -56,8 +56,9 @@ vous accederez par les moyens de la route `/conversations` à la page suivante
 <img width="1440" alt="Capture d’écran 2024-02-23 à 17 44 52" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/1a9823f1-5c9f-4402-9576-15b601f10740">
 
 #### En cliquant sur **Rédiger un email**
+vous accederez par les moyens de la route `/compose
+<img width="1435" alt="Capture d’écran 2024-02-23 à 17 45 20" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/d8a984c7-9667-45ba-b3b5-966b5c0ab3e1">
+
+#### En cliquant sur **Email Envoyés**
 vous accederez par les moyens de la route `/
-
-#### En cliquant sur 
-
 
