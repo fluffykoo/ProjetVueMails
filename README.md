@@ -1,6 +1,6 @@
-Loane à modifié
 # ProjetVueMails
-=======
+___
+
 # vue-oauth-microsoft-graph
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -31,3 +31,11 @@ npm run dev
 npm run build
 ```
 >>>>>>> 49dcaf4 ( Premier commit)
+>>>>>>>
+
+ Pour ouvrir le projet nous vous conseillons de suivre les commandes du screenshot ci dessous si vous rencontrez des difficultées:
+
+<img width="935" alt="Capture d’écran 2024-02-21 à 16 35 58" src="https://github.com/fluffykoo/ProjetVueMails/assets/95043878/77781348-8b71-4092-9816-803873ff8f9b">
+
+# Les fonctionalités
+
